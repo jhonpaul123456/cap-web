@@ -1,0 +1,87 @@
+  <h2 class="recipe-title">
+    ${menu.strMeal}
+    </h2>
+    <p class="recipe-category">${menu.strCategory}</p>
+    <div class="recipe-instructions">
+        <h3>Instructions:</h3>
+        <p>${menu.strInstructions}</p>
+    </div>
+
+    
+    <div class="ingredients-and-labelList">
+    <div class="ingredients-list">
+        <ul class="ing-title">Ingredients
+            <li>${menu.strIngredient1}</li>
+            <li>${menu.strIngredient2}</li>
+            <li>${menu.strIngredient3}</li>
+            <li>${menu.strIngredient4}</li>
+            <li>${menu.strIngredient5}</li>
+            <li>${menu.strIngredient6}</li>
+            <li>${menu.strIngredient7}</li>
+            <li>${menu.strIngredient8}</li>
+            <li>${menu.strIngredient9}</li>
+        </ul>
+
+    </div>
+    <div class="label-list">
+        <ul class="ing-label">Label
+
+            <li>${menu.strMeasure1}</li>
+            <li>${menu.strMeasure2}</li>
+            <li>${menu.strMeasure3}</li>
+            <li>${menu.strMeasure4}</li>
+            <li>${menu.strMeasure5}</li>
+            <li>${menu.strMeasure6}</li>
+            <li>${menu.strMeasure7}</li>
+            <li>${menu.strMeasure8}</li>
+            <li>${menu.strMeasure9}</li>
+
+        </ul>
+    </div>
+</div>
+
+    <div class="recipe-meal-img">
+        <img src="${menu.strMealThumb}" alt="">
+    </div>
+    <div class="recipe-link">
+        <a href="${menu.strYoutube}" target="_blank">Watch Demo</a>
+    </div>
+    
+    
+    `;
+
+
+
+
+
+
+
+    NOT FOUND CODES
+
+
+     renderJSX=`
+            
+            <div class="snippetsNotAvailable" id="pulseit">
+            <img src="OwiX.gif" alt="">
+            <div class="contentNotAvailable">
+                <h1>Sorry!, That snippets is not available here. <small>(No search found)</small></h1>
+            </div>
+            </div>
+            
+            `;
+            menuList.classList.add('notFound');
+
+
+                 <!-- thid details -->
+
+     <div class="recipe-details">
+         <div class="recipe-list">
+             <ul>
+                 <li>Recipe 1</li>
+                 <li>Recipe 2</li>
+                 <li>Recipe 3</li>
+                 <li>Recipe 4</li>
+                 <li>Recipe </li>
+             </ul>
+         </div>
+     </div>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>The Food Snippets</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="nav-logo">
+                <h1>Food Snippets</h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li><a href="">Snippets</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href=""><i class="fas fa-user"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="meal-wrapper">
+            <div class="search-section">
+                <h1>The Food <span>Snippets</span></h1>
+                <form class="search-box-section">
+                    <input type="text" class="search" placeholder="Input food-snippets here" id="search-box">
+                    <button class="btn btn-search-meal"><i class="fas fa-search"></i></button>
+                </form>
+                <small>Ex. Chickens</small>
+                <div class="category-wrapper">
+                    <h1 class="category">CATEGORY</h1>
+                    <div class="category-list">
+                        <strong>Italian Recipe</strong>
+                        <strong>American Recipe</strong>
+                        <strong>French Recipe</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="snippets-result-section">
+                <h1 class="snippets-result-heading">Your Snippets Result</h1>
+                <div class="snippets-results-list">
+
+                    <!-- <div class="snippets-item">
+                        <div class="snippets-img">
+                                <img src="download (1).jpg" alt="food">
+                        </div>
+                        <div class="snippets-content">
+                            <div class="snippets-content-title">
+                                <h1>Meal name here</h1>
+                                <a href="#" class="btn recipe-btn">View Details</a>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- <div class="snippets-item">
+                        <div class="snippets-img">
+                                <img src="download (1).jpg" alt="food">
+                        </div>
+                        <div class="snippets-content">
+                            <div class="snippets-content-title">
+                                <h1>Meal name here</h1>
+                                <a href="#" class="btn recipe-btn">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="snippets-item">
+                        <div class="snippets-img">
+                                <img src="download (1).jpg" alt="food">
+                        </div>
+                        <div class="snippets-content">
+                            <div class="snippets-content-title">
+                                <h1>Meal name here</h1>
+                                <a href="#" class="btn recipe-btn">View Details</a>
+                            </div>
+                        </div>
+                    </div> -->
+
+                </div>
+            </div>
+
+            <!-- <div class="snippetsNotAvailable" id="pulseit">
+                <img src="noFood.jpg" alt="">
+                <div class="contentNotAvailable">
+                    <h1>Sorry!, That snippets is not available here. <small>(No search found)</small></h1>
+                </div>
+            </div> -->
+
+                        <!-- modal -->
+                        <div class="meal-details">
+                            <button type="button" class="btn recipe-close-btn" id="recipe-close-btn"><i class="fas fa-times"></i></button>
+
+            
+
+
+
+                            <!-- first details -->
+                            <div class="meal-details-content">
+<!-- 
+                                  
+    <div class="details-first-section">
+    <div class="first-section-title">
+        <div class="title">
+            <h1>${menu.title}</h3>
+        </div>
+       
+        <h4>Dishtype:${menu.dishTypes}</h4> </h4>
+    </div>
+    <div class="first-section-img">
+        <div class="img-wrapper">
+            <img src="${menu.image}" alt="">
+        </div>
+        <div class="add-details-wrapper">
+            <div class="stat-reviews">
+                <div class="dietary">
+                    <small>Dietary Type: ${menu.diets}</small>
+                </div>
+                <div class="likes">
+                <small>Aggregate Likes: ${menu.aggregateLikes} <i class="fas fa-thumbs-up"></i></small>
+                </div>
+            </div>
+         
+        </div>
+    </div>
+</div>
+
+ <!-- second details -->
+ <div class="details-second-section">
+    <div class="instructions">
+        <h1>Instructions</h1>
+        <li>${menu.analyzedInstructions[0].steps.map(x=> x.step).join('<br>')}</li>
+        
+    </div>
+    <div class="time-ready">
+        <div class="clock">
+        <i class="fas fa-utensils"></i>
+        <h3>No. of Servings: ${menu.servings}</h3>
+        </div>
+        <div class="price">
+            <i class="fas fa-dollar-sign"></i>
+            <h3>No. of Servings: ${menu.servings}</h3>
+        </div>
+    </div>
+</div>
+
+<!-- thid details -->
+
+<div class="recipe-details">
+    <div class="recipe-list">
+     
+            
+    <li>${menu.extendedIngredients[0].aisle}</li>
+   
+  
+    </div>
+</div>
+</div>
+
+
+                            <!-- END OF MODAL -->
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
